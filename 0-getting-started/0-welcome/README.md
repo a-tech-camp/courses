@@ -1,7 +1,7 @@
 # Welcome
 Welcome to The Coding Course.
 
-The Coding Course is dedicated to explaining how to code. Code is a representation of formalized ideas. Computer code tells a computer what to do. Legal code tells a court how to rule. We use code to create abstract structures that lead consistent results.
+The Coding Course is dedicated to explaining how to code. Code is a representation of formalized ideas. Just like legal code tells a court how to rule, computer code tells a computer how to execute tasks. These 
 
 ## Codebase template
 This course can also
@@ -11,8 +11,6 @@ In this course, does this by asserting that every set of changes is a cohesive l
 
 ## Course Overview
 ### Code
-
-
 
 #### Fundamental Unit of Code
 Code has some fundamental unit. That is, there is a point where we cannot breakdown code anymore. We can break up legal documents into sections that each serve a cohesive purpose. We can even go further. Sections can be broken up into paragraphs which may be further broken up into sentences and then clauses.
@@ -33,7 +31,6 @@ This course was inspired by an article about a [statistic course](https://www.go
 ### Takeaways
 Upon completing this course, you will:
  - practice researching technical topic and completing technical tutorials.
- -
 
 ### Resources
 #### Discord
@@ -45,7 +42,6 @@ As an exercise, take the game Connect 4 and describe it. Would your description 
 
 ## Next Lesson
 Currently you are at lesson 0. To get to lesson 1, find the dropdown with `lesson-0` and change it to `lesson-1`
-
 
 ### Philosophy
 Every lesson directly improves a students ability to code.
