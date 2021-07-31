@@ -1,0 +1,20 @@
+{
+  "name": "node-app",
+  "version": "0.0.1",
+  "description": "This is a simple Node App. See the README.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "cat qa.md; npm run start"
+  },
+  "keywords": [
+    "node",
+    "app",
+    "tutorial"
+  ],
+  "author": "Matt Wojo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}

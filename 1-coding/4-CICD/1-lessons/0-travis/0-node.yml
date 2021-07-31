@@ -1,0 +1,8 @@
+# This is a yaml file that describes what travis should do on updates
+
+# Travis is very minimalist in it's specifications. 
+language: node_js # specifies what software to have preinstalled on the computer
+node_js: 
+  - 12 # This specifies what language version to use. This will be the latest version of node 10
+
+# By default, this specification will run `npm test` which is specified in package.json

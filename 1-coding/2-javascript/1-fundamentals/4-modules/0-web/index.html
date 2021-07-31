@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Web Imports</title>
+        <meta charset="UTF-8">
+        <!-- Below we are importing through the web -->
+        <script 
+            src="https://code.jquery.com/jquery-3.4.1.min.js" 
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        >
+        </script>
+
+        <script type="text/javascript">
+            /**
+             * This file defines how to import on a website. This is very different than importing through a server
+             * framework like node
+             * 
+             * In our html we have imported the jquery program. As a result we are able to use the jquery framework
+             */
+             $(document).ready(function(){
+                $("#msgid").html("This is Hello World by JQuery");
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <div id=msgid></div> <!-- This will be filled, by jquery. If we don't import, we get an error -->
+        <p>Go to the console. Compare that to the code written in "./index.js"</p>
+
+    </body>
+
+</html>
