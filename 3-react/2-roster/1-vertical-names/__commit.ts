@@ -5,16 +5,16 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import CreateReactApp from '../../0-create-react-app/__commit';
+import Names from '../0-names/__commit';
 
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Grid',
+	name: 'Vertical Names',
 	message,
 	dependencies: [
-		CreateReactApp,
+		Names,
 	] as CommitFile[],
 } as const as CommitFile;

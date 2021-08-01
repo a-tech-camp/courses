@@ -5,16 +5,19 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import CreateReactApp from '../../0-create-react-app/__commit';
+import Map from '../3-map/__commit';
+import BackgroundColor from '../5-background-color/__commit';
 
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Grid',
+	name: 'Use a List',
 	message,
+	branchName: 'class-roster',
 	dependencies: [
-		CreateReactApp,
+		Map,
+		BackgroundColor,
 	] as CommitFile[],
 } as const as CommitFile;
