@@ -12,7 +12,7 @@ const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Toggle Player',
+	name: 'Grid',
 	message,
 	dependencies: [
 		CreateReactApp,
