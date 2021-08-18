@@ -5,16 +5,17 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import TogglePlayer from '../2-toggle-player/__commit';
-
+import PlayerTurn from '../0-player-turn/__commit';
+import Slot from '../1-slot/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Player Color',
+	name: 'Column Drop',
 	message,
 	dependencies: [
-		TogglePlayer,
+		PlayerTurn,
+		Slot,
 	] as CommitFile[],
 } as const as CommitFile;

@@ -1,3 +1,0 @@
-# Column Drop
-
-

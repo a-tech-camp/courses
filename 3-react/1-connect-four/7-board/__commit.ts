@@ -5,17 +5,16 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Max6 from '../5-max-6/__commit';
-
+import MultiColumn from '../6-multi-column/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Abstract Drop',
-	branchName: 'connect-4',
+	name: 'Board',
 	message,
 	dependencies: [
-		Max6,
+		MultiColumn,
 	] as CommitFile[],
+	branchName: 'connect-4'
 } as const as CommitFile;

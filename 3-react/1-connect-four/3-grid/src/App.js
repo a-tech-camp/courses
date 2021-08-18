@@ -3,12 +3,12 @@ import "./styles.css";
 function Column() {
   return (
     <div className="column">
-      <p className="dot"></p>
-      <p className="dot"></p>
-      <p className="dot"></p>
-      <p className="dot"></p>
-      <p className="dot"></p>
-      <p className="dot"></p>
+      <p className="slot"></p>
+      <p className="slot"></p>
+      <p className="slot"></p>
+      <p className="slot"></p>
+      <p className="slot"></p>
+      <p className="slot"></p>
     </div>
   );
 }
