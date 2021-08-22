@@ -1,14 +1,15 @@
+import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
   const [chips, changeChips] = useState([]);
-  const [playerTurn, changePlayerTurn] = useState('red');
+  const [playerTurn, changePlayerTurn] = useState("red");
 
   function togglePlayerTurn() {
-    if (playerTurn === 'red') {
-      changePlayerTurn('yellow');
+    if (playerTurn === "red") {
+      changePlayerTurn("yellow");
     } else {
-      changePlayerTurn('red');
+      changePlayerTurn("red");
     }
   }
   function addChips() {
@@ -28,7 +29,7 @@ export default function App() {
 	    <div className="slot" className={chips[1]}></div>
 	    <div className="slot" className={chips[0]}></div>
       </div>
-      It is player {playerTurn}'s turn
+      It is {playerTurn}'s turn
     </div>
   );
 }

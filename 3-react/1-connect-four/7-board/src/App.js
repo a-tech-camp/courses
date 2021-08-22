@@ -1,37 +1,29 @@
+import { useState } from "react";
 import "./styles.css";
 
 function Column(props) {
-    return (
-      <div onClick={props.onClick}>
-        {[5, 4, 3, 2, 1, 0].map(rowIndex =>
-          <div className="slot" className={props.chips[rowIndex]}></div>
-        )}
-      </div>
-    );
-
+  return (
+    <div className="column" onClick={props.onClick}>
+      {[5, 4, 3, 2, 1, 0].map((rowIndex) => (
+        <div className={`slot ${props.chips[rowIndex]}`} key={rowIndex}></div>
+      ))}
+    </div>
+  );
 }
 
 export default function App() {
-  const [board, changeBoard] = useState([
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-  ]);
-  const [playerTurn, changePlayerTurn] = useState('red');
+  const [board, changeBoard] = useState([[], [], [], [], [], [], []]);
+  const [playerTurn, changePlayerTurn] = useState("red");
 
   function togglePlayerTurn() {
-    if (playerTurn === 'red') {
-      changePlayerTurn('yellow');
+    if (playerTurn === "red") {
+      changePlayerTurn("yellow");
     } else {
-      changePlayerTurn('red');
+      changePlayerTurn("red");
     }
   }
   function playColumn(columnNumber) {
-    if (chips[columnNumber].length < 6) {
+    if (board[columnNumber].length < 6) {
       board[columnNumber] = [...board[columnNumber], playerTurn];
       changeBoard([...board]);
       togglePlayerTurn();
@@ -40,12 +32,16 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="blue" onClick={addChips}>
-        {board.map((column, index) =>
-          <Column onClick={() => playColumn(index)} chips={board[index]}></Column>
-        )}
+      <div className="board">
+        {board.map((column, index) => (
+          <Column
+            key={index.toString()}
+            onClick={() => playColumn(index)}
+            chips={column}
+          ></Column>
+        ))}
       </div>
-      It is player {playerTurn}'s turn
+      <p>It is {playerTurn}'s turn</p>
     </div>
   );
 }

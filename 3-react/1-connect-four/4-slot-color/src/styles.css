@@ -5,10 +5,9 @@
 .slot {
   height: 50px;
   width: 50px;
-  background-color: transparent;
+  background-color: white;
   border-radius: 50%;
-  display: block;
-  margin: 7px;
+  margin: 5px;
 }
 .column {
   display: inline-block;
@@ -17,11 +16,9 @@
   background-color: blue;
   display: inline-block;
 }
-
 .red {
   background-color: red;
 }
-
 .yellow {
   background-color: yellow;
 }

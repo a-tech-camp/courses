@@ -13,7 +13,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      It is player {playerTurn}'s turn
+      It is {playerTurn}'s turn
       <button onClick={togglePlayerTurn}>change player</button>
     </div>
   );

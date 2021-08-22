@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
@@ -14,9 +15,9 @@ export default function App() {
   return (
     <div className="App">
       <div className="blue" onClick={togglePlayerTurn}>
-        <div className="slot" className={playerTurn}></div>\
+        <div className={`slot ${playerTurn}`}></div>\
       </div>
-      It is player {playerTurn}'s turn
+      It is {playerTurn}'s turn
     </div>
   );
 }

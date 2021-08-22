@@ -1,14 +1,15 @@
+import { useState } from "react";
 import "./styles.css";
 
 function Column(props) {
     return (
-      <div onClick={props.onClick}>
-        <div className="slot" className={props.chips[5]}></div>
-        <div className="slot" className={props.chips[4]}></div>
-        <div className="slot" className={props.chips[3]}></div>
-        <div className="slot" className={props.chips[2]}></div>
-        <div className="slot" className={props.chips[1]}></div>
-        <div className="slot" className={props.chips[0]}></div>
+      <div className="column" onClick={props.onClick}>
+        <div className={`slot ${props.chips[5]}`}></div>
+        <div className={`slot ${props.chips[4]}`}></div>
+        <div className={`slot ${props.chips[3]}`}></div>
+        <div className={`slot ${props.chips[2]}`}></div>
+        <div className={`slot ${props.chips[1]}`}></div>
+        <div className={`slot ${props.chips[0]}`}></div>
       </div>
     );
 
@@ -24,13 +25,13 @@ export default function App() {
     [],
     [],
   ]);
-  const [playerTurn, changePlayerTurn] = useState('red');
+  const [playerTurn, changePlayerTurn] = useState("red");
 
   function togglePlayerTurn() {
-    if (playerTurn === 'red') {
-      changePlayerTurn('yellow');
+    if (playerTurn === "red") {
+      changePlayerTurn("yellow");
     } else {
-      changePlayerTurn('red');
+      changePlayerTurn("red");
     }
   }
   function playColumn(columnNumber) {
@@ -52,7 +53,7 @@ export default function App() {
         <Column onClick={() => playColumn(1)} chips={board[1]}></Column>
         <Column onClick={() => playColumn(0)} chips={board[0]}></Column>
       </div>
-      It is player {playerTurn}'s turn
+      It is {playerTurn}'s turn
     </div>
   );
 }
