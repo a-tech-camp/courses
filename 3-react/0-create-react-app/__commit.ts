@@ -13,6 +13,5 @@ export default {
 	name: 'Create React App',
 	message,
 	dependencies: [
-		Welcome,
 	] as CommitFile[],
 } as const as CommitFile;
