@@ -16,15 +16,7 @@ function Column(props) {
 }
 
 export default function App() {
-  const [board, changeBoard] = useState([
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-  ]);
+  const [board, changeBoard] = useState([[], [], [], [], [], [], []]);
   const [playerTurn, changePlayerTurn] = useState("red");
 
   function togglePlayerTurn() {
@@ -35,7 +27,7 @@ export default function App() {
     }
   }
   function playColumn(columnNumber) {
-    if (chips[columnNumber].length < 6) {
+    if (board[columnNumber].length < 6) {
       board[columnNumber] = [...board[columnNumber], playerTurn];
       changeBoard([...board]);
     }

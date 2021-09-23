@@ -5,8 +5,8 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Grid from '../3-grid/__commit';
-import DropColumn from '../5-column-drop/__commit';
+import Grid from '../5-grid/__commit';
+import DropColumn from '../4-column-drop/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 

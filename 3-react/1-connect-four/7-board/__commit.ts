@@ -16,5 +16,6 @@ export default {
 	dependencies: [
 		MultiColumn,
 	] as CommitFile[],
-	branchName: 'connect-4'
+	branchName: 'connect-4',
+	publish: true,
 } as const as CommitFile;

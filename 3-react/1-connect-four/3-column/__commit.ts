@@ -5,15 +5,16 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Column from '../2-column/__commit';
+import Slot from '../0-slot/__commit';
+
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Grid',
+	name: 'Column',
 	message,
 	dependencies: [
-		Column,
+		Slot,
 	] as CommitFile[],
 } as const as CommitFile;

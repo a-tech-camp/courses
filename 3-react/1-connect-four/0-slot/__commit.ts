@@ -5,17 +5,16 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import PlayerTurn from '../0-player-turn/__commit';
-import Slot from '../1-slot/__commit';
+import CreateReactApp from '../../0-create-react-app/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
+
 export default {
 	dirname: __dirname,
-	name: 'Column Drop',
+	name: 'Slot',
 	message,
 	dependencies: [
-		PlayerTurn,
-		Slot,
+		CreateReactApp,
 	] as CommitFile[],
 } as const as CommitFile;

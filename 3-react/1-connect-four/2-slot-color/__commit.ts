@@ -5,8 +5,8 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Column from '../2-column/__commit';
-import SlotColor from '../4-slot-color/__commit';
+import PlayerTurn from '../1-player-turn/__commit';
+import Slot from '../0-slot/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
@@ -15,7 +15,7 @@ export default {
 	name: 'Column Drop',
 	message,
 	dependencies: [
-		Column,
-		SlotColor,
+		PlayerTurn,
+		Slot,
 	] as CommitFile[],
 } as const as CommitFile;

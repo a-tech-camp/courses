@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="blue" onClick={togglePlayerTurn}>
-        <div className={`slot ${playerTurn}`}></div>\
+        <div className={`slot ${playerTurn}`}></div>
       </div>
       It is {playerTurn}'s turn
     </div>

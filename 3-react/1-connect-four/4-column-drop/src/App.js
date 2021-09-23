@@ -13,21 +13,21 @@ export default function App() {
     }
   }
   function addChips() {
-	if (chips.length < 6) {
-	  changeChips([...chips, playerTurn]);
-	}
-	togglePlayerTurn();
+    if (chips.length < 6) {
+      changeChips([...chips, playerTurn]);
+      togglePlayerTurn();
+    }
   }
 
   return (
     <div className="App">
       <div className="blue" onClick={addChips}>
-	    <div className="slot" className={chips[5]}></div>
-	    <div className="slot" className={chips[4]}></div>
-	    <div className="slot" className={chips[3]}></div>
-	    <div className="slot" className={chips[2]}></div>
-	    <div className="slot" className={chips[1]}></div>
-	    <div className="slot" className={chips[0]}></div>
+        <div className={`slot ${chips[5]}`}></div>
+        <div className={`slot ${chips[4]}`}></div>
+        <div className={`slot ${chips[3]}`}></div>
+        <div className={`slot ${chips[2]}`}></div>
+        <div className={`slot ${chips[1]}`}></div>
+        <div className={`slot ${chips[0]}`}></div>
       </div>
       It is {playerTurn}'s turn
     </div>
