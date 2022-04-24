@@ -2,18 +2,15 @@
 import * as fs from 'fs-extra';
 
 // repo
-import { CommitFile } from '../../../../../src/domains/course/interfaces';
+import { CommitFile } from '../../../../src/domains/course/interfaces';
 
-// content
-import Slot from '../0-slot/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Column Drop',
+	name: 'Root',
 	message,
-	dependencies: [
-		Slot,
-	] as CommitFile[],
+	dependencies: [] as CommitFile[],
+	branchName: 'root',
 } as const as CommitFile;

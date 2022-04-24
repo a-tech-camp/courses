@@ -5,17 +5,15 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import MultiColumn from '../6-multi-column/__commit';
+import PlayerTurn from '../1-player-turn/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Board',
+	name: 'Column Drop',
 	message,
 	dependencies: [
-		MultiColumn,
+		PlayerTurn,
 	] as CommitFile[],
-	branchName: 'connect-4',
-	publish: true,
 } as const as CommitFile;

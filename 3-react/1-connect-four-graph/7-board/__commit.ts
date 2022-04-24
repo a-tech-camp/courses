@@ -5,15 +5,17 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Slot from '../0-slot/__commit';
+import MultiColumn from '../6-multi-column/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Column Drop',
+	name: 'Board',
 	message,
 	dependencies: [
-		Slot,
+		MultiColumn,
 	] as CommitFile[],
+	branchName: 'connect-4-graph',
+	publish: true,
 } as const as CommitFile;

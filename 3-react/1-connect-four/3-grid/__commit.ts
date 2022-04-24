@@ -5,15 +5,15 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Slot from '../0-slot/__commit';
+import ColumnDrop from '../2-column-drop/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
 export default {
 	dirname: __dirname,
-	name: 'Column Drop',
+	name: 'MultiColumn',
 	message,
 	dependencies: [
-		Slot,
+		ColumnDrop,
 	] as CommitFile[],
 } as const as CommitFile;

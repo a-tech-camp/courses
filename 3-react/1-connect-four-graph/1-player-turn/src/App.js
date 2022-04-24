@@ -11,13 +11,10 @@ export default function App() {
       changePlayerTurn('red');
     }
   }
-
   return (
     <div className="App">
-      <div className="blue" onClick={togglePlayerTurn}>
-        <div className={`slot ${playerTurn}`}></div>
-      </div>
       It is {playerTurn}'s turn
+      <button onClick={togglePlayerTurn}>change player</button>
     </div>
   );
 }
