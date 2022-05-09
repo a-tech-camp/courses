@@ -1,10 +1,9 @@
 # Welcome
 Welcome to The Coding Course.
 
-The Coding Course is dedicated to explaining how to code. Code is a representation of formalized ideas. Just like legal code tells a court how to rule, computer code tells a computer how to execute tasks. These 
+The Coding Course is dedicated to explaining how to code. Code is a representation of formalized ideas. Just like legal code tells a court how to rule, computer code tells a computer how to execute tasks. These
 
 ## Codebase template
-This course can also
 It is also a codebase that can be used to start a project a singular codebase that serves as both a template to start a project as well as a tutorial on how to code.
 
 In this course, does this by asserting that every set of changes is a cohesive lesson, and every lesson is taught as a series of changes. As a result, each branch of this codebase of this codebase can show you exactly how it got to the way it was by following each predecessor lesson.
@@ -33,9 +32,6 @@ Upon completing this course, you will:
  - practice researching technical topic and completing technical tutorials.
 
 ### Resources
-#### Discord
-#### Glossary
-TODO add glossary.
 
 ## Connect 4
 As an exercise, take the game Connect 4 and describe it. Would your description tell a new player all the rules.
@@ -59,7 +55,7 @@ Upon completing this course, you will:
 
 ### Resources
 #### Discord
-Join us on [discord](https://discord.gg/AJ6bswH5eg) on Wednesdays @7PM EST.
+Join us on [discord](https://discord.gg/AJ6bswH5eg).
 
 ## Connect 4
 As an exercise try to describe Connect 4 to someone who wants to play it but never has.

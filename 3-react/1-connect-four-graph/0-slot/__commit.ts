@@ -5,15 +5,16 @@ import * as fs from 'fs-extra';
 import { CommitFile } from '../../../../../src/domains/course/interfaces';
 
 // content
-import Slot from '../0-slot/__commit';
+import CreateReactApp from '../../0-create-react-app/__commit';
 
 const message: string = fs.readFileSync(`${__dirname}/__message.md`).toString();
 
+
 export default {
 	dirname: __dirname,
-	name: 'Column Drop',
+	name: 'Slot',
 	message,
 	dependencies: [
-		Slot,
+		CreateReactApp,
 	] as CommitFile[],
 } as const as CommitFile;
