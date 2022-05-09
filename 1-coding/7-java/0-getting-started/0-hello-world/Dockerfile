@@ -1,8 +1,11 @@
-FROM openjdk:11
+FROM openjdk:alpine
 
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
+COPY . /usr/src/app
+WORKDIR /usr/src/app
 
-RUN javac Main.java
+RUN javac *.java
 
-CMD ["java", "Main"]
+RUN apk add junit --verbose --root /usr/src/downloads
+
+
+CMD [""]
